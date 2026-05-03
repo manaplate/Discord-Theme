@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    font-family: 'Prompt', monospace;
+}
+
+/* ===== THEME COLORS ===== */
+.theme-dark,
+.theme-light,
+#app-mount>[data-popout-root="true"].theme-dark,
+.theme-custom {
+    /* Text */
+    --header-primary: #ffbaff !important;
+    --header-secondary: var(--primary-345) !important;
+    --text-normal: var(--primary-300) !important;
+    --text-muted: var(--primary-345) !important;
+    --text-link: var(--blue-345) !important;
+    --text-positive: var(--green-330) !important;
+    --text-warning: var(--yellow-300) !important;
+    --text-danger: var(--red-345) !important;
+    --text-brand: var(--main-hsl) !important;
+
+    /* Interactive */
+    --interactive-normal: var(--primary-345) !important;
+    --interactive-hover: var(--primary-230) !important;
+    --interactive-active: var(--primary-130) !important;
+    --interactive-muted: var(--primary-500) !important;
+
+    /* Backgrounds — mostly black */
+    --background-primary: var(--primary-900) !important;
+    --background-secondary: var(--primary-830) !important;
+    --background-secondary-alt: var(--primary-800) !important;
+    --background-tertiary: var(--primary-860) !important;
+    --background-accent: var(--primary-760) !important;
+    --background-floating: #202020 !important;
+    --background-nested-floating: var(--primary-830) !important;
+    --background-mobile-primary: var(--black-500) !important;
+    --background-mobile-secondary: var(--primary-860) !important;
+    --background-base-low: #000 !important;
+    --background-base-lower: #000 !important;
+    --background-base-lowest: #000 !important;
+    --background-code: #1f1f1f !important;
+    --chat-background: var(--black-500) !important;
+    --chat-background-default: #181818 !important;
+    --chat-border: var(--primary-700) !important;
+    --chat-input-container-background: var(--primary-600) !important;
+    --channeltextarea-background: var(--primary-800) !important;
+    --home-background: var(--primary-760) !important;
+    --activity-card-background: #161616 !important;
+
+    /* Background modifiers */
+    --background-modifier-hover: rgba(0, 0, 0, 0.15) !important;
+    --background-modifier-active: rgba(0, 0, 0, 0.2) !important;
+    --background-modifier-selected: rgba(0, 0, 0, 0.3) !important;
+    --background-modifier-accent: #ffbaff75 !important;
+
+    /* Mentions — pink tint */
+    --mention-foreground: rgba(255, 222, 131, 0.999) !important;
+    --mention-background: rgba(255, 186, 255, 0.279) !important;
+    --background-mentioned: rgba(255, 129, 232, 0.101) !important;
+    --background-mentioned-hover: rgba(250, 126, 233, 0.115) !important;
+    --background-mentioned-border: rgb(255, 150, 250) !important;
+    --background-mentioned-toolbar: rgb(255, 146, 222) !important;
+    --background-message-hover: hsl(var(--primary-900-hsl)/0.06) !important;
+    --background-message-highlight: hsl(var(--brand-360-hsl)/0.08) !important;
+    --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06) !important;
+    --background-message-automod: hsl(var(--red-400-hsl)/0.05) !important;
+    --background-message-automod-hover: hsl(var(--red-400-hsl)/0.1) !important;
+
+    /* Brand / accent (pink) */
+    --brand-500: var(--main-hsl) !important;
+    --brand-experiment: var(--main-hsl) !important;
+    --brand-360: hsl(var(--hue), calc(var(--saturation) + .1%), calc(var(--lightness) + 12.5%)) !important;
+    --brand-experiment-400: hsl(var(--hue), calc(var(--saturation) + .1%), calc(var(--lightness) + 6.8%)) !important;
+    --brand-experiment-500: hsl(var(--hue), calc(var(--saturation) - .4%), calc(var(--lightness) - .3%)) !important;
+    --brand-experiment-560: hsl(var(--hue), calc(var(--saturation) - 35%), calc(var(--lightness) - 13%)) !important;
+    --brand-experiment-600: hsl(var(--hue), calc(var(--saturation) - 39%), calc(var(--lightness) - 21%)) !important;
+    --control-brand-foreground: var(--brand-360) !important;
+    --control-brand-foreground-new: var(--brand-360) !important;
+    --text-brand: var(--main-hsl) !important;
+
+    /* Status */
+    --status-positive: var(--green-360) !important;
+    --status-warning: var(--yellow-300) !important;
+    --status-danger: var(--red-400) !important;
+    --status-positive-background: var(--green-430) !important;
+    --status-positive-text: var(--white-500) !important;
+    --status-warning-background: var(--yellow-300) !important;
+    --status-warning-text: var(--black-500) !important;
+    --status-danger-background: var(--red-400) !important;
+    --status-danger-text: var(--white-500) !important;
+
+    /* Info boxes */
+    --info-positive-background: hsl(var(--green-360-hsl)/0.1) !important;
+    --info-positive-foreground: var(--green-360) !important;
+    --info-warning-background: hsl(var(--yellow-300-hsl)/0.1) !important;
+    --info-warning-foreground: var(--yellow-300) !important;
+    --info-danger-background: hsl(var(--red-400-hsl)/0.1) !important;
+    --info-danger-foreground: var(--red-400) !important;
+    --info-help-background: hsl(var(--blue-345-hsl)/0.1) !important;
+    --info-help-foreground: var(--blue-345) !important;
+    --info-box-background: hsl(var(--blue-345-hsl)/0.1) !important;
+
+    /* Modals */
+    --modal-background: #212121 !important;
+    --modal-footer-background: #141414 !important;
+
+    /* Inputs */
+    --input-background: var(--primary-700) !important;
+    --deprecated-text-input-bg: var(--primary-700) !important;
+    --deprecated-text-input-border: hsl(var(--black-500-hsl)/0.3) !important;
+    --deprecated-text-input-border-hover: var(--primary-900) !important;
+    --deprecated-text-input-border-disabled: var(--primary-700) !important;
+    --deprecated-store-bg: var(--primary-600) !important;
+    --deprecated-card-bg: hsl(var(--primary-700-hsl)/0.6) !important;
+    --deprecated-card-editable-bg: hsl(var(--primary-700-hsl)/0.3) !important;
+
+    /* Misc */
+    --channels-default: #777777 !important;
+    --channel-icon: var(--primary-400) !important;
+    --channel-text-area-placeholder: var(--primary-400) !important;
+    --spoiler-revealed-background: var(--primary-660) !important;
+    --spoiler-hidden-background: var(--primary-700) !important;
+    --textbox-markdown-syntax: var(--primary-360) !important;
+    --focus-primary: var(--blue-345) !important;
+    --logo-primary: var(--white-500) !important;
+    --primary-560-rgb: 35, 40, 47 !important;
+    --primary-600: var(--background-primary) !important;
+    --primary-630: var(--background-secondary) !important;
+    --android-navigation-bar-background: var(--primary-830) !important;
+    --android-ripple: hsl(var(--white-500-hsl)/0.07) !important;
+    --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9) !important;
+}
+
+/* ===== SCROLLBARS ===== */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 95, 95, 0.4) !important;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+/* ===== TOGGLE SWITCH ===== */
+#app-mount .container-2nx-BQ {
+    height: 20px;
+}
+
+#app-mount .container-2nx-BQ.checked-25WXMf {
+    background-color: var(--main-hsl) !important;
+}
+
+#app-mount .container-2nx-BQ:not(.checked-25WXMf) {
+    background-color: #72767d !important;
+}
+
+#app-mount .container-2nx-BQ>.slider-32CRPX {
+    overflow: visible;
+}
+
+#app-mount .container-2nx-BQ>.slider-32CRPX>svg {
+    display: none;
+}
+
+#app-mount .container-2nx-BQ.checked-25WXMf>.slider-32CRPX>rect {
+    width: 25px;
+    height: 25px;
+    x: 4;
+    y: -5;
+    rx: 50%;
+    stroke: var(--main-hsl);
+    stroke-width: 2;
+}
+
+#app-mount .container-2nx-BQ:not(.checked-25WXMf)>.slider-32CRPX>rect {
+    width: 25px;
+    height: 25px;
+    x: 0;
+    y: -5;
+    rx: 50%;
+    stroke: #72767d;
+    stroke-width: 2;
+}
+
+/* ===== MISC UI FIXES ===== */
+#app-mount .emptyPage-2TGR7j,
+#app-mount .container-2IKOsH,
+#app-mount .chat-2ZfjoI {
+    background: none;
+}
+
+#app-mount .contentColumn-1C7as6,
+#app-mount .customColumn-2n-oKU {
+    max-width: unset;
+}
+
+.embed-hKpSrO {
+    border: 2px solid;
+}
+
+.bar-wDIGjg {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Shrink server profile banner */
+#app-mount .accountProfileCard-lbN7n->.bannerSVGWrapper-qc0szY {
+    max-height: 20px !important;
+    min-height: 20px !important;
+}
+
+/* Server folder icon */
+.closedFolderIconWrapper-3tRb2d {
+    display: none;
+}
+
+.folderIconWrapper-1oRIZr::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: inherit;
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M10%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V8c0-1.1-.9-2-2-2h-8l-2-2z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    mask: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M10%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V8c0-1.1-.9-2-2-2h-8l-2-2z%22%2F%3E%3C%2Fsvg%3E") no-repeat;
+    transform: scale(1.33);
+    filter: brightness(1.5) saturate(1.5);
+}
+
+/* Role pills */
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+    border: 0;
+    border-radius: 5px;
+}
+
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%, -50%);
+}
+
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+
+.role-2TIOKu .roleCircle-3K9O3d::after {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: .4;
+}
+
+/* ===== LOGIN PAGE ===== */
+.app-3xd6d0>.characterBackground-1BPOOJ>.artwork-L5TAwQ {
+    display: none;
+}
+
+.app-3xd6d0>.characterBackground-1BPOOJ {
+    background-color: var(--background-secondary);
+}
+
+.app-3xd6d0>.characterBackground-1BPOOJ>.wrapper-1f5byN .authBox-1HR6Ha {
+    background-color: var(--modal-background);
+}
+
+body {
+    font-weight: medium !important;
+}
+
+/* ===== DM NAME COLOR ===== */
+[class*="privateChannelName_"],
+[class*="channel_"] [class*="name_"],
+[class*="headerName_"],
+[class*="channelName_"] {
+    color: #ffbaff !important;
+}
