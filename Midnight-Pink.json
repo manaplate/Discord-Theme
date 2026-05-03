@@ -1,0 +1,364 @@
+{
+    "meta": {
+        "platform": "mobile",
+        "description": "Discord mobile theme — pink accent, black backgrounds. Sidebar feature excluded.",
+        "fontImport": "https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+        "notes": {
+            "important": "All CSS custom property values in themeColors.variables are applied with !important in the generated CSS.",
+            "variableNames": "Keys in themeColors.variables correspond to CSS custom properties. Prepend -- when referencing them in CSS (e.g. 'header-primary' → '--header-primary').",
+            "themeSelectors": "themeColors.selectors lists the selectors the variables block is applied to."
+        }
+    },
+    "font": {
+        "html, body": {
+            "font-family": "'Prompt', monospace"
+        }
+    },
+    "themeColors": {
+        "selectors": [
+            ".theme-dark",
+            ".theme-light",
+            "#app-mount>[data-popout-root=\"true\"].theme-dark",
+            ".theme-custom"
+        ],
+        "variables": {
+            "text": {
+                "header-primary": "#ffbaff",
+                "header-secondary": "var(--primary-345)",
+                "text-normal": "var(--primary-300)",
+                "text-muted": "var(--primary-345)",
+                "text-link": "var(--blue-345)",
+                "text-positive": "var(--green-330)",
+                "text-warning": "var(--yellow-300)",
+                "text-danger": "var(--red-345)",
+                "text-brand": "var(--main-hsl)"
+            },
+            "interactive": {
+                "interactive-normal": "var(--primary-345)",
+                "interactive-hover": "var(--primary-230)",
+                "interactive-active": "var(--primary-130)",
+                "interactive-muted": "var(--primary-500)"
+            },
+            "backgrounds": {
+                "background-primary": "var(--primary-900)",
+                "background-secondary": "var(--primary-830)",
+                "background-secondary-alt": "var(--primary-800)",
+                "background-tertiary": "var(--primary-860)",
+                "background-accent": "var(--primary-760)",
+                "background-floating": "#202020",
+                "background-nested-floating": "var(--primary-830)",
+                "background-mobile-primary": "var(--black-500)",
+                "background-mobile-secondary": "var(--primary-860)",
+                "background-base-low": "#000",
+                "background-base-lower": "#000",
+                "background-base-lowest": "#000",
+                "background-code": "#1f1f1f",
+                "chat-background": "var(--black-500)",
+                "chat-background-default": "#181818",
+                "chat-border": "var(--primary-700)",
+                "chat-input-container-background": "var(--primary-600)",
+                "channeltextarea-background": "var(--primary-800)",
+                "home-background": "var(--primary-760)",
+                "activity-card-background": "#161616"
+            },
+            "backgroundModifiers": {
+                "background-modifier-hover": "rgba(0, 0, 0, 0.15)",
+                "background-modifier-active": "rgba(0, 0, 0, 0.2)",
+                "background-modifier-selected": "rgba(0, 0, 0, 0.3)",
+                "background-modifier-accent": "#ffbaff75"
+            },
+            "mentions": {
+                "mention-foreground": "rgba(255, 222, 131, 0.999)",
+                "mention-background": "rgba(255, 186, 255, 0.279)",
+                "background-mentioned": "rgba(255, 129, 232, 0.101)",
+                "background-mentioned-hover": "rgba(250, 126, 233, 0.115)",
+                "background-mentioned-border": "rgb(255, 150, 250)",
+                "background-mentioned-toolbar": "rgb(255, 146, 222)",
+                "background-message-hover": "hsl(var(--primary-900-hsl)/0.06)",
+                "background-message-highlight": "hsl(var(--brand-360-hsl)/0.08)",
+                "background-message-highlight-hover": "hsl(var(--brand-360-hsl)/0.06)",
+                "background-message-automod": "hsl(var(--red-400-hsl)/0.05)",
+                "background-message-automod-hover": "hsl(var(--red-400-hsl)/0.1)"
+            },
+            "brand": {
+                "brand-500": "var(--main-hsl)",
+                "brand-experiment": "var(--main-hsl)",
+                "brand-360": "hsl(var(--hue), calc(var(--saturation) + .1%), calc(var(--lightness) + 12.5%))",
+                "brand-experiment-400": "hsl(var(--hue), calc(var(--saturation) + .1%), calc(var(--lightness) + 6.8%))",
+                "brand-experiment-500": "hsl(var(--hue), calc(var(--saturation) - .4%), calc(var(--lightness) - .3%))",
+                "brand-experiment-560": "hsl(var(--hue), calc(var(--saturation) - 35%), calc(var(--lightness) - 13%))",
+                "brand-experiment-600": "hsl(var(--hue), calc(var(--saturation) - 39%), calc(var(--lightness) - 21%))",
+                "control-brand-foreground": "var(--brand-360)",
+                "control-brand-foreground-new": "var(--brand-360)"
+            },
+            "status": {
+                "status-positive": "var(--green-360)",
+                "status-warning": "var(--yellow-300)",
+                "status-danger": "var(--red-400)",
+                "status-positive-background": "var(--green-430)",
+                "status-positive-text": "var(--white-500)",
+                "status-warning-background": "var(--yellow-300)",
+                "status-warning-text": "var(--black-500)",
+                "status-danger-background": "var(--red-400)",
+                "status-danger-text": "var(--white-500)"
+            },
+            "infoBoxes": {
+                "info-positive-background": "hsl(var(--green-360-hsl)/0.1)",
+                "info-positive-foreground": "var(--green-360)",
+                "info-warning-background": "hsl(var(--yellow-300-hsl)/0.1)",
+                "info-warning-foreground": "var(--yellow-300)",
+                "info-danger-background": "hsl(var(--red-400-hsl)/0.1)",
+                "info-danger-foreground": "var(--red-400)",
+                "info-help-background": "hsl(var(--blue-345-hsl)/0.1)",
+                "info-help-foreground": "var(--blue-345)",
+                "info-box-background": "hsl(var(--blue-345-hsl)/0.1)"
+            },
+            "modals": {
+                "modal-background": "#212121",
+                "modal-footer-background": "#141414"
+            },
+            "inputs": {
+                "input-background": "var(--primary-700)",
+                "deprecated-text-input-bg": "var(--primary-700)",
+                "deprecated-text-input-border": "hsl(var(--black-500-hsl)/0.3)",
+                "deprecated-text-input-border-hover": "var(--primary-900)",
+                "deprecated-text-input-border-disabled": "var(--primary-700)",
+                "deprecated-store-bg": "var(--primary-600)",
+                "deprecated-card-bg": "hsl(var(--primary-700-hsl)/0.6)",
+                "deprecated-card-editable-bg": "hsl(var(--primary-700-hsl)/0.3)"
+            },
+            "misc": {
+                "channels-default": "#777777",
+                "channel-icon": "var(--primary-400)",
+                "channel-text-area-placeholder": "var(--primary-400)",
+                "spoiler-revealed-background": "var(--primary-660)",
+                "spoiler-hidden-background": "var(--primary-700)",
+                "textbox-markdown-syntax": "var(--primary-360)",
+                "focus-primary": "var(--blue-345)",
+                "logo-primary": "var(--white-500)",
+                "primary-560-rgb": "35, 40, 47",
+                "primary-600": "var(--background-primary)",
+                "primary-630": "var(--background-secondary)",
+                "android-navigation-bar-background": "var(--primary-830)",
+                "android-ripple": "hsl(var(--white-500-hsl)/0.07)",
+                "forum-post-tag-background": "hsl(var(--primary-660-hsl)/0.9)"
+            }
+        }
+    },
+    "rules": {
+        "scrollbars": [
+            {
+                "selector": "::-webkit-scrollbar",
+                "properties": {
+                    "width": "0px",
+                    "height": "0px",
+                    "background": "transparent"
+                }
+            },
+            {
+                "selector": "::-webkit-scrollbar-thumb",
+                "properties": {
+                    "background-color": "rgba(95, 95, 95, 0.4)",
+                    "border-radius": "9999px"
+                }
+            },
+            {
+                "selector": "::-webkit-scrollbar-track",
+                "properties": {
+                    "background-color": "transparent"
+                }
+            }
+        ],
+        "toggleSwitch": [
+            {
+                "selector": "#app-mount .container-2nx-BQ",
+                "properties": {
+                    "height": "20px"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ.checked-25WXMf",
+                "properties": {
+                    "background-color": "var(--main-hsl)"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ:not(.checked-25WXMf)",
+                "properties": {
+                    "background-color": "#72767d"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ > .slider-32CRPX",
+                "properties": {
+                    "overflow": "visible"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ > .slider-32CRPX > svg",
+                "properties": {
+                    "display": "none"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ.checked-25WXMf > .slider-32CRPX > rect",
+                "properties": {
+                    "width": "25px",
+                    "height": "25px",
+                    "x": "4",
+                    "y": "-5",
+                    "rx": "50%",
+                    "stroke": "var(--main-hsl)",
+                    "stroke-width": "2"
+                }
+            },
+            {
+                "selector": "#app-mount .container-2nx-BQ:not(.checked-25WXMf) > .slider-32CRPX > rect",
+                "properties": {
+                    "width": "25px",
+                    "height": "25px",
+                    "x": "0",
+                    "y": "-5",
+                    "rx": "50%",
+                    "stroke": "#72767d",
+                    "stroke-width": "2"
+                }
+            }
+        ],
+        "uiFixes": [
+            {
+                "selector": "#app-mount .emptyPage-2TGR7j, #app-mount .container-2IKOsH, #app-mount .chat-2ZfjoI",
+                "properties": {
+                    "background": "none"
+                }
+            },
+            {
+                "selector": "#app-mount .contentColumn-1C7as6, #app-mount .customColumn-2n-oKU",
+                "properties": {
+                    "max-width": "unset"
+                }
+            },
+            {
+                "selector": ".embed-hKpSrO",
+                "properties": {
+                    "border": "2px solid"
+                }
+            },
+            {
+                "selector": ".bar-wDIGjg",
+                "properties": {
+                    "background-color": "var(--background-secondary-alt)"
+                }
+            },
+            {
+                "selector": "#app-mount .accountProfileCard-lbN7n- > .bannerSVGWrapper-qc0szY",
+                "comment": "Shrink server profile banner",
+                "properties": {
+                    "max-height": "20px",
+                    "min-height": "20px"
+                }
+            },
+            {
+                "selector": ".closedFolderIconWrapper-3tRb2d",
+                "comment": "Server folder icon — hide default closed state",
+                "properties": {
+                    "display": "none"
+                }
+            },
+            {
+                "selector": ".folderIconWrapper-1oRIZr::before",
+                "comment": "Server folder icon — custom folder SVG mask",
+                "properties": {
+                    "position": "absolute",
+                    "content": "\"\"",
+                    "width": "18px",
+                    "height": "18px",
+                    "top": "0",
+                    "left": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "margin": "auto",
+                    "background-color": "inherit",
+                    "-webkit-mask": "url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M10%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V8c0-1.1-.9-2-2-2h-8l-2-2z%22%2F%3E%3C%2Fsvg%3E\") no-repeat",
+                    "mask": "url(\"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M10%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V8c0-1.1-.9-2-2-2h-8l-2-2z%22%2F%3E%3C%2Fsvg%3E\") no-repeat",
+                    "transform": "scale(1.33)",
+                    "filter": "brightness(1.5) saturate(1.5)"
+                }
+            },
+            {
+                "selector": ".role-2TIOKu",
+                "comment": "Role pills",
+                "properties": {
+                    "transform": "translate(0)",
+                    "overflow": "hidden",
+                    "border": "0",
+                    "border-radius": "5px"
+                }
+            },
+            {
+                "selector": ".role-2TIOKu .roleRemoveIcon-387wKV",
+                "properties": {
+                    "margin": "0",
+                    "left": "unset",
+                    "transform": "translate(50%, -50%)"
+                }
+            },
+            {
+                "selector": ".role-2TIOKu .roleRemoveButton-17oXnT",
+                "properties": {
+                    "position": "static"
+                }
+            },
+            {
+                "selector": ".role-2TIOKu .roleCircle-3K9O3d::after",
+                "properties": {
+                    "content": "''",
+                    "top": "0",
+                    "left": "0",
+                    "z-index": "-1",
+                    "width": "100%",
+                    "height": "100%",
+                    "position": "absolute",
+                    "background": "inherit",
+                    "opacity": ".4"
+                }
+            }
+        ],
+        "loginPage": [
+            {
+                "selector": ".app-3xd6d0 > .characterBackground-1BPOOJ > .artwork-L5TAwQ",
+                "properties": {
+                    "display": "none"
+                }
+            },
+            {
+                "selector": ".app-3xd6d0 > .characterBackground-1BPOOJ",
+                "properties": {
+                    "background-color": "var(--background-secondary)"
+                }
+            },
+            {
+                "selector": ".app-3xd6d0 > .characterBackground-1BPOOJ > .wrapper-1f5byN .authBox-1HR6Ha",
+                "properties": {
+                    "background-color": "var(--modal-background)"
+                }
+            }
+        ],
+        "typography": [
+            {
+                "selector": "body",
+                "properties": {
+                    "font-weight": "medium"
+                }
+            }
+        ],
+        "dmNameColor": [
+            {
+                "selector": "[class*=\"privateChannelName_\"], [class*=\"channel_\"] [class*=\"name_\"], [class*=\"headerName_\"], [class*=\"channelName_\"]",
+                "properties": {
+                    "color": "#ffbaff"
+                }
+            }
+        ]
+    }
+}
