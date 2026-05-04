@@ -6,7 +6,7 @@
         {
             "name": "manaplate",
             "id": "486362358311026688"
-        } 
+        }
     ],
     "semanticColors": {
         "BACKGROUND_TERTIARY": [
@@ -150,8 +150,17 @@
         "STATUS_POSITIVE_BACKGROUND": [
             "#32CD32"
         ],
+        "BUTTON_DANGER_BACKGROUND": [
+            "#ffbaff"
+        ],
+        "BUTTON_DANGER_BACKGROUND_ACTIVE": [
+            "#e07ee0"
+        ],
+        "BUTTON_DANGER_BACKGROUND_HOVER": [
+            "#f0a0f0"
+        ],
         "MENTION_BACKGROUND": [
-            "#ffbaff47"
+            "#ffe08a60"
         ],
         "BACKGROUND_MENTIONED": [
             "#ff81e81a"
