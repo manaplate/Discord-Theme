@@ -63,7 +63,7 @@
       "#e07ee014"
     ],
     "BACKGROUND_FEEDBACK_CRITICAL": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "BACKGROUND_FEEDBACK_INFO": [
@@ -71,12 +71,12 @@
       "#e07ee014"
     ],
     "BACKGROUND_FEEDBACK_NOTIFICATION": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "BACKGROUND_FEEDBACK_POSITIVE": [
-      "#A0C8A014",
-      "#60906014"
+      "#ffbaff14",
+      "#FFBAFF14"
     ],
     "BACKGROUND_FEEDBACK_WARNING": [
       "#E0C0901a",
@@ -147,7 +147,7 @@
       "#f0a8f0"
     ],
     "BADGE_NOTIFICATION_BACKGROUND": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "BADGE_TEXT_BRAND": [
@@ -175,7 +175,7 @@
       "#ffdefff5"
     ],
     "BORDER_FEEDBACK_CRITICAL": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "BORDER_FEEDBACK_INFO": [
@@ -183,8 +183,8 @@
       "#e07ee0"
     ],
     "BORDER_FEEDBACK_POSITIVE": [
-      "#A0C8A0",
-      "#609060"
+      "#ffbaff",
+      "#FFBAFF"
     ],
     "BORDER_FEEDBACK_WARNING": [
       "#E0C090",
@@ -559,8 +559,8 @@
       "#f0a8f0cc"
     ],
     "EXPRESSIVE_GRADIENT_GREEN_END": [
-      "#A0C8A073",
-      "#609060cc"
+      "#FFBAFF73",
+      "#FFBAFFcc"
     ],
     "EXPRESSIVE_GRADIENT_GREEN_START": [
       "#C0E0C073",
@@ -571,8 +571,8 @@
       "#e07ee0e6"
     ],
     "EXPRESSIVE_GRADIENT_NITRO_GREEN_START": [
-      "#A0C8A080",
-      "#609060e6"
+      "#FFBAFF80",
+      "#FFBAFFe6"
     ],
     "EXPRESSIVE_GRADIENT_NITRO_PINK_END": [
       "#ffbaff80",
@@ -615,8 +615,8 @@
       "#ffc0ff4d"
     ],
     "EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_END": [
-      "#A0C8A04d",
-      "#6090604d"
+      "#FFBAFF4d",
+      "#FFBAFF4d"
     ],
     "EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_START": [
       "#C0E0C04d",
@@ -647,7 +647,7 @@
       "#d890d84d"
     ],
     "EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_END": [
-      "#E8A0A04d",
+      "#FFBAFF4d",
       "#C080804d"
     ],
     "EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_START": [
@@ -683,7 +683,7 @@
       "#905090"
     ],
     "ICON_FEEDBACK_CRITICAL": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "ICON_FEEDBACK_INFO": [
@@ -691,12 +691,12 @@
       "#e07ee0"
     ],
     "ICON_FEEDBACK_NOTIFICATION": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "ICON_FEEDBACK_POSITIVE": [
-      "#A0C8A0",
-      "#609060"
+      "#FFBAFF",
+      "#FFBAFF"
     ],
     "ICON_FEEDBACK_WARNING": [
       "#E0C090",
@@ -759,7 +759,7 @@
       "#e07ee0"
     ],
     "INLINENOTICE_BORDER_CRITICAL": [
-      "#E8A0A085",
+      "#FFBAFF85",
       "#C0808099"
     ],
     "INLINENOTICE_BORDER_INFO": [
@@ -767,8 +767,8 @@
       "#e07ee099"
     ],
     "INLINENOTICE_BORDER_POSITIVE": [
-      "#A0C8A085",
-      "#60906099"
+      "#FFBAFF85",
+      "#FFBAFF99"
     ],
     "INLINENOTICE_BORDER_WARNING": [
       "#E0C09052",
@@ -787,7 +787,7 @@
       "#d890d8"
     ],
     "INPUT_BORDER_ERROR_DEFAULT": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "INPUT_ICON_DEFAULT": [
@@ -887,11 +887,11 @@
       "#e07ee0"
     ],
     "MESSAGE_AUTOMOD_BACKGROUND_DEFAULT": [
-      "#E8A0A00d",
+      "#FFBAFF0d",
       "#C080800d"
     ],
     "MESSAGE_AUTOMOD_BACKGROUND_HOVER": [
-      "#E8A0A01a",
+      "#FFBAFF1a",
       "#C080801a"
     ],
     "MESSAGE_BACKGROUND_HOVER": [
@@ -1351,8 +1351,8 @@
       "#FFFFFF"
     ],
     "STATUS_SPEAKING": [
-      "#A0C8A0",
-      "#A0C8A0"
+      "#FFBAFF",
+      "#FFBAFF"
     ],
     "STATUS_WARNING": [
       "#E0C090",
@@ -1371,12 +1371,12 @@
       "#C0A070"
     ],
     "STEAM_REVIEW_TEXT_NEGATIVE": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "STEAM_REVIEW_TEXT_POSITIVE": [
-      "#A0C8A0",
-      "#609060"
+      "#FFBAFF",
+      "#FFBAFF"
     ],
     "SWITCH_BACKGROUND_DEFAULT": [
       "#1a1a1a",
@@ -1447,7 +1447,7 @@
       "#1a1a1a"
     ],
     "TEXT_FEEDBACK_CRITICAL": [
-      "#E8A0A0",
+      "#FFBAFF",
       "#C08080"
     ],
     "TEXT_FEEDBACK_INFO": [
@@ -1455,8 +1455,8 @@
       "#e07ee0"
     ],
     "TEXT_FEEDBACK_POSITIVE": [
-      "#A0C8A0",
-      "#609060"
+      "#FFBAFF",
+      "#FFBAFF"
     ],
     "TEXT_FEEDBACK_WARNING": [
       "#E0C090",
